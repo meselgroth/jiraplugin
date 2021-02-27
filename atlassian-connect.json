@@ -8,8 +8,14 @@
         "url": "http://example.com"
     },
     "authentication": {
-        "type": "none"
+        "type": "jwt"
     },
+    "lifecycle": {
+        "installed": "/app-installed-callback"
+    },
+    "scopes": [
+        "read", "write"
+    ],
     "apiVersion": 1,
     "modules": {
         "generalPages": [
